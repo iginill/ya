@@ -1,0 +1,74 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 10px;
+    padding: 0;
+    background: linear-gradient(221deg, #171717 25.36%, #080808 66.49%);
+    background-size: inherit;
+}
+body {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный цвет фона навигационной панели */
+    transition: top 0.3s;
+}
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.nav-link{
+    font-family: Raleway, sans-serif;;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.gallery-item {
+    box-sizing: border-box;
+    margin: 5px; /* Adjust to match your padding */
+    width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: Add border-radius for a rounded appearance */
+}
+
+.gallery-item.horizontal {
+    flex-grow: 2; /* Adjust for horizontal items to take 2 columns */
+}
